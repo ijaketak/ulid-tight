@@ -69,9 +69,9 @@ spec = do
     it "is ordered correctly" $ (minBound :: Ulid) < (maxBound :: Ulid)
   describe "Enum instance" $ do
     it "throw an error by succ of maxBound" $
-      (return $! (succ (maxBound :: Ulid))) `shouldThrow` anyErrorCall
+      (return $! succ (maxBound :: Ulid)) `shouldThrow` anyErrorCall
     it "throw an error by pred of minBound" $
-      (return $! (pred (minBound :: Ulid))) `shouldThrow` anyErrorCall
+      (return $! pred (minBound :: Ulid)) `shouldThrow` anyErrorCall
   describe "Bits instance" $ do
     it "vanishes all bits by .&. minBound" $ do
       u <- getUlid ag

@@ -1,6 +1,6 @@
 cabal-version:      3.0
 name:               ulid-tight
-version:            0.0.1
+version:            0.1
 synopsis:           Another ULID implementation with tight memory representation
 description:
     ulid-tight is one implementation of ULID.
@@ -25,6 +25,11 @@ extra-doc-files:
 source-repository head
     type:     git
     location: https://github.com/ijaketak/ulid-tight
+
+source-repository this
+    type:     git
+    location: https://github.com/ijaketak/ulid-tight
+    tag:      v0.1
 
 common depends
     build-depends:

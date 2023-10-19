@@ -2,6 +2,6 @@
 
 ## version 0
 
-### 0.1 (still not released)
+### 0.1 -- 2023-10-19
 
 * First version.
